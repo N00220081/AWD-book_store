@@ -14,6 +14,7 @@
         <tbody>
             @foreach ($books as $book)
             <tr>
+                <td> <a href="{{ route('books.show' , $book) }}">{{ $book->title }}</a></td>
                 <td>{{ $book->title }}</td>
                 <td>{{ $book->description }}</td>
                 <td>
